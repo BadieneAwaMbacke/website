@@ -1,0 +1,89 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: beige;
+    font-size: 1.5em;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em 0;
+    nav ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    
+    nav ul li {
+        display: inline;
+        margin: 0 1em;
+    }
+    
+    nav ul li a {
+        color: white;
+        text-decoration: none;
+    }
+}
+.loisirs {
+    /* display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem; */
+
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 0.4fr 0.4fr;
+    gap: 2rem;
+}
+
+.loisirs {
+    background: beige;
+    padding: 1.5rem;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.loisirs :hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.loisirs img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 1rem;
+    transition: transform 0.3s ease;
+}
+
+.loisirs img:hover {
+    transform: scale(1.1);
+}
+
+#decouvre{
+    font-size: 1rem;
+    margin: 0.5rem 0;
+    color: #555;
+    text-align: center;
+}
+
+#decouvre strong {
+    font-size: 1.2rem;
+    color: #000;
+}
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    text-decoration: inherit;
+    font-size:0.5em;
+}
